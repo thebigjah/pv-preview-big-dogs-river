@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Big Dogs on the River | Kayak and tube rentals on the Middle Oconee, Athens GA</title>
+<meta name="description" content="Kayak and tube the Middle Oconee River in Athens, GA. Park at Big Dog's Tire and Auto Repair, ride a 15-minute shuttle upstream, float 3.5 miles back to your vehicle.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16251f;
+  --river:#12332b;
+  --river2:#1d4a3e;
+  --sand:#f1ecdf;
+  --sand2:#e4ddc9;
+  --ochre:#e3a62a;
+  --clay:#9a3f1d;
+  --line:rgba(22,37,31,.25);
+  --display:"Bricolage Grotesque","Arial Black",system-ui,sans-serif;
+  --body:"Public Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--sand);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);line-height:1.02;letter-spacing:-.02em}
+.wrap{max-width:1240px;margin:0 auto;padding:0 1.25rem}
+
+.bar{background:#000;color:#fff;font-size:.85rem;text-align:center;padding:.55rem 1rem;line-height:1.35}
+
+/* hero */
+.hero{background:var(--river);color:var(--sand);padding:3rem 0 3.5rem}
+.hero .wrap{display:grid;gap:2.5rem}
+.brand{font-family:var(--display);font-weight:700;font-size:1.05rem;color:var(--ochre);margin-bottom:1.5rem}
+.hero h1{font-size:clamp(2.9rem,11vw,7.2rem);font-weight:800}
+.hero h1 em{font-style:normal;color:var(--ochre)}
+.hero p.lead{font-size:1.2rem;max-width:34rem;margin-top:1.5rem;color:#e6e1d0}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.btn{display:inline-block;font-weight:600;text-decoration:none;padding:.95rem 1.5rem;border:2px solid var(--ochre);font-size:1.05rem}
+.btn.main{background:var(--ochre);color:#1a1405}
+.btn.alt{color:var(--sand)}
+.btn:hover,.btn:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.board{background:var(--sand);color:var(--ink);padding:1.75rem}
+.board h2{font-size:1.1rem;font-weight:700;margin-bottom:1rem}
+.board dl{display:grid;grid-template-columns:auto 1fr;gap:.2rem 1rem;align-items:baseline}
+.board dt{font-weight:600}
+.board dd{text-align:right}
+.board .row{display:contents}
+.board hr{grid-column:1/-1;border:0;border-top:1px solid var(--line);margin:.6rem 0}
+.board .big{font-family:var(--display);font-weight:800;font-size:2.6rem;line-height:1}
+.board .small{font-size:.95rem}
+
+/* route */
+.route{padding:4rem 0}
+.route h2{font-size:clamp(2.2rem,6vw,4rem);max-width:15ch}
+.steps{list-style:none;padding:0;margin-top:2.5rem;border-top:3px solid var(--ink);display:grid;counter-reset:s}
+.steps li{counter-increment:s;padding:1.5rem 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:3rem 1fr;gap:.5rem}
+.steps li::before{content:counter(s);font-family:var(--display);font-weight:800;font-size:2rem;line-height:1;color:var(--clay)}
+.steps b{display:block;font-family:var(--display);font-size:1.35rem;line-height:1.15;margin-bottom:.25rem}
+.facts{display:flex;flex-wrap:wrap;gap:1rem 3rem;margin-top:2.5rem}
+.facts div{font-size:.95rem}
+.facts strong{display:block;font-family:var(--display);font-size:2.4rem;line-height:1}
+
+/* shoals */
+.shoals{background:var(--river2);color:var(--sand);padding:4rem 0}
+.shoals .wrap{display:grid;gap:1.5rem}
+.shoals h2{font-size:clamp(2.4rem,8vw,5.5rem);font-weight:800}
+.shoals h2 span{color:var(--ochre)}
+.shoals p{max-width:38rem;font-size:1.15rem}
+.shoals .meta{border-top:1px solid rgba(241,236,223,.4);padding-top:1rem;font-size:1rem}
+
+/* rates */
+.rates{padding:4rem 0}
+.rates h2{font-size:clamp(2.2rem,6vw,4rem)}
+.price{display:grid;gap:2rem;margin-top:2.5rem}
+.price .k{border-top:3px solid var(--ink);padding-top:1rem}
+.price .k b{font-family:var(--display);font-weight:800;font-size:clamp(5rem,20vw,11rem);line-height:.9;display:block;letter-spacing:-.04em}
+.price .t b{font-size:clamp(4rem,15vw,8rem)}
+.price span.u{font-weight:600;font-size:1.1rem;display:block;margin-top:.5rem}
+.incl{margin-top:2.5rem;display:grid;gap:1.25rem}
+.incl p{max-width:34rem}
+.incl ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.5rem 2rem;font-weight:600}
+.incl li::before{content:"+ ";color:var(--clay)}
+.sat{margin-top:1.5rem;font-weight:600}
+
+/* gear + rules */
+.gear{background:var(--sand2);padding:4rem 0}
+.gear .wrap{display:grid;gap:3rem}
+.gear h2{font-size:clamp(1.9rem,5vw,3rem);margin-bottom:1rem}
+.gear ul{padding:0;list-style:none}
+.gear li{padding:.7rem 0;border-bottom:1px solid var(--line)}
+.gear li:first-child{border-top:1px solid var(--line)}
+
+/* cabana */
+.cabana{padding:4rem 0}
+.cabana .wrap{display:grid;gap:3rem}
+.cabana h2{font-size:clamp(2.4rem,7vw,4.8rem)}
+.cabana .lead{font-size:1.2rem;margin-top:1.25rem;max-width:34rem}
+.games{margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;font-weight:600}
+.games span{border-bottom:2px solid var(--ochre)}
+.groups{background:var(--river);color:var(--sand);padding:2rem}
+.groups h3{font-size:1.9rem;margin-bottom:.75rem}
+.groups ul{padding:0;list-style:none;margin:1rem 0}
+.groups li{padding:.45rem 0;border-bottom:1px solid rgba(241,236,223,.3)}
+.groups a{color:var(--ochre);font-weight:600}
+
+/* about */
+.about{border-top:3px solid var(--ink);padding:3.5rem 0}
+.about .wrap{display:grid;gap:1.5rem}
+.about h2{font-size:clamp(2rem,5vw,3.2rem)}
+.about p{max-width:36rem}
+.motto{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,3.6rem);line-height:1;color:var(--clay)}
+
+footer{background:#0b1f19;color:var(--sand);padding:3rem 0 2.5rem}
+footer .wrap{display:grid;gap:2rem}
+footer h2{font-size:clamp(1.9rem,5vw,2.8rem)}
+footer a{color:var(--ochre)}
+footer .cols{display:grid;gap:1.5rem}
+footer .small{font-size:.9rem;opacity:.85}
+:focus-visible{outline:3px solid var(--ochre);outline-offset:2px}
+
+@media(min-width:760px){
+  .wrap{padding:0 2.5rem}
+  .hero{padding:4rem 0 5rem}
+  .hero .wrap{grid-template-columns:1.6fr 1fr;align-items:end;gap:4rem}
+  .steps{grid-template-columns:repeat(4,1fr);gap:0 2rem;border-bottom:0}
+  .steps li{grid-template-columns:1fr;border-bottom:0;padding-top:1.25rem}
+  .shoals .wrap{grid-template-columns:1.5fr 1fr;align-items:end;gap:4rem}
+  .shoals .meta{grid-column:2;grid-row:1 / span 2}
+  .price{grid-template-columns:1.5fr 1fr;gap:4rem}
+  .incl{grid-template-columns:1fr 1fr;gap:4rem}
+  .gear .wrap{grid-template-columns:1fr 1fr;gap:5rem}
+  .cabana .wrap{grid-template-columns:1.3fr 1fr;gap:5rem;align-items:start}
+  .groups{padding:2.5rem}
+  .about .wrap{grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+  footer .cols{grid-template-columns:1.2fr 1fr 1fr;gap:3rem}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="bar">Concept preview made by Purcell Ventures for Big Dogs on the River. Not the official site.</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="brand">Big Dogs on the River &middot; Athens, GA</div>
+      <h1>Park at the tire shop. <em>Float back</em> to your car.</h1>
+      <p class="lead">We rent kayaks and tubes on the Middle Oconee River. A shuttle takes you 15 minutes upstream, then you float 3.5 miles back to your vehicle at your own pace.</p>
+      <div class="cta">
+        <a class="btn main" href="tel:7063536002">Call 706.353.6002 to reserve</a>
+        <a class="btn alt" href="mailto:bigdogsontheriver@gmail.com">Email a reservation request</a>
+      </div>
+    </div>
+    <aside class="board" aria-label="Hours and rates">
+      <h2>Open Monday to Saturday</h2>
+      <dl>
+        <dt>Hours</dt><dd>10am to 3pm</dd>
+        <hr>
+        <dt>Kayaking</dt><dd class="big">$50</dd>
+        <dt></dt><dd class="small">per person</dd>
+        <hr>
+        <dt>Tubing</dt><dd class="big">$40</dd>
+        <dt></dt><dd class="small">per person</dd>
+        <hr>
+        <dt>Saturday</dt><dd>Call ahead</dd>
+      </dl>
+    </aside>
+  </div>
+</header>
+
+<main>
+<section class="route" id="trip">
+  <div class="wrap">
+    <h2>Your car is waiting at the finish.</h2>
+    <ol class="steps">
+      <li><div><b>Park</b>Leave your vehicle at Big Dog's Tire and Auto Repair and Service, 2525 Atlanta Highway.</div></li>
+      <li><div><b>Ride upstream</b>The shuttle takes about 15 minutes to the put-in.</div></li>
+      <li><div><b>Float down</b>Most of it is an easygoing stream with a few sets of shoals. Kayakers run three separate shoals.</div></li>
+      <li><div><b>Take out</b>The shuttle picks you up at the take out. A staffer helps you take your boat.</div></li>
+    </ol>
+    <div class="facts">
+      <div><strong>3.5 miles</strong>of river trail</div>
+      <div><strong>2 to 3 hours</strong>for most folks</div>
+      <div><strong>Early</strong>is when the water is best</div>
+    </div>
+  </div>
+</section>
+
+<section class="shoals">
+  <div class="wrap">
+    <h2>Tallassee Shoals at <span>Mitchell Bridge</span></h2>
+    <p>The most popular stretch for kayakers. It runs Class I-II depending on water level, so call to check weather conditions.</p>
+    <p class="meta">Paddlers go in sit-on-top kayaks, single or tandem. The Middle Oconee runs on through Athens to the Oconee River.</p>
+  </div>
+</section>
+
+<section class="rates" id="rates">
+  <div class="wrap">
+    <h2>One price covers the whole trip.</h2>
+    <div class="price">
+      <div class="k"><b>$50</b><span class="u">Kayaking, per person</span></div>
+      <div class="k t"><b>$40</b><span class="u">Tubing, per person</span></div>
+    </div>
+    <div class="incl">
+      <div>
+        <p>The rate includes:</p>
+        <ul><li>Parking</li><li>Equipment</li><li>Shuttle service</li></ul>
+      </div>
+      <p>Bring your own boat and the same rate applies. We transport it for you. Each participant needs a signed release waiver.</p>
+    </div>
+    <p class="sat">Monday to Friday (holidays too) and Saturday before 12pm. Saturday: call ahead for reservations.</p>
+  </div>
+</section>
+
+<section class="gear" id="before">
+  <div class="wrap">
+    <div>
+      <h2>Your boat</h2>
+      <ul>
+        <li>Sit-on-top kayaks, single and tandem</li>
+        <li>Lightweight aluminum paddles</li>
+        <li>PFDs with pockets for storage</li>
+        <li>Bring sunscreen, footwear and fluids</li>
+      </ul>
+    </div>
+    <div>
+      <h2>On the river</h2>
+      <ul>
+        <li>No one goes on the river alone</li>
+        <li>No Styrofoam or glass</li>
+        <li>A small cooler is allowed for water only</li>
+        <li>Call to check weather conditions</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="cabana" id="cabana">
+  <div class="wrap">
+    <div>
+      <h2>Up the hill is the Cabana.</h2>
+      <p class="lead">When you come off the river, an indoor and outdoor space is waiting with grills, a restroom, picnic tables and satellite TV. Some weekends there is live music.</p>
+      <div class="games"><span>Volleyball</span><span>Horseshoes</span><span>Yard games</span></div>
+      <p class="lead">The Cabana also rents for birthdays, weddings and parties, with transportation provided. Call for details.</p>
+    </div>
+    <div class="groups" id="groups">
+      <h3>Group packages</h3>
+      <p>Door to door round-trip shuttle for local groups. Add a band and food to customize your party.</p>
+      <ul>
+        <li>Team building</li>
+        <li>Social events</li>
+        <li>Private parties</li>
+        <li>Family outings</li>
+        <li>Fundraising and recruitment</li>
+      </ul>
+      <p>Shuttles run Sundays for large group reservations only. <a href="tel:7063536002">Call 706.353.6002</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap">
+    <div>
+      <h2>Family owned since 2010</h2>
+      <p style="margin-top:1rem">T.J. Stephens and his father Terry Stephens started Big Dogs on the River. Their mission is a better, cleaner Middle Oconee River and surrounding streams, by educating people and having them enjoy Athens' natural resources.</p>
+    </div>
+    <p class="motto">Keepin it Clean and Green.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h2>Ready to get on the water?</h2>
+    <div class="cols">
+      <div>
+        <p><strong>Reservations</strong></p>
+        <p><a href="tel:7063536002">706.353.6002</a></p>
+        <p><a href="mailto:bigdogsontheriver@gmail.com">bigdogsontheriver@gmail.com</a></p>
+      </div>
+      <div>
+        <p><strong>Find us</strong></p>
+        <p>Big Dog's Tire and Auto Repair and Service<br>2525 Atlanta Highway<br>Athens, GA 30606</p>
+      </div>
+      <div>
+        <p><strong>Hours</strong></p>
+        <p>Monday to Saturday, 10am to 3pm<br>Shuttle runs the same hours<br>Saturday: call ahead</p>
+      </div>
+    </div>
+    <p class="small">Concept preview made by Purcell Ventures. Not the official site.</p>
+  </div>
+</footer>
+</body>
+</html>
